@@ -7,12 +7,14 @@
     <title> Orion Jerwa: About me</title>
     <!-- This is were they user will have their title for the page-->
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/js.js"></script>
   </head>
   <body>
     <nav>
       <!-- The navigation is fixed  so that the user can go up and down the page using the archor tags-->
-      <div>
-        <a href="index.html">Top</a>
+      <div class="largeScreen">
+        
+        <a href="index.html">Home</a>
         <!-- goes to home page-->
         <a href="#" id="onPage">About Me</a>
         <!-- -->
@@ -21,14 +23,27 @@
         <a href="Portfolio.html">Portfolio</a>
         <!-- -->
         <a href="contacts.html">Contacts</a>
-
+        
       </div>
+      <span style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()" id="mediaSize01" class="smallScreen">&#9776; Menu</span>
     </nav>
-    <div class="parallax" id="top"><h2> About Orion Jerwa</h2></div>
+    <div class="parallax" id="top"></div>
     <div class="midbar">
       <p id="resume">This is where one would add a long about me page</p>
     </div>
     <div class="parallax2"></div>
+    <div id="myNav" class="overlay">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+      
+        <a href="demo.html">Demo</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </div>
+  </div>
     <footer>
       <div id="contacts_div">
         <div>
